@@ -1,10 +1,24 @@
+
 /**
  * SearchNilai06
  */
+import java.util.Scanner;
+
 public class SearchNilai06 {
     public static void main(String[] args) {
-        int[] nilai = {78, 65, 90, 55, 88, 72};
-        int key = 100;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan banyaknya elemen array: ");
+        int n = input.nextInt();
+        int[] nilai = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Masukkan nilai elemen ke-" + i + ": ");
+            nilai[i] = input.nextInt();
+        }
+
+        System.out.print("Masukkan nilai yang ingin dicari: ");
+        int key = input.nextInt();
         boolean ditemukan = false;
 
         for (int i = 0; i < nilai.length; i++) {
@@ -16,7 +30,7 @@ public class SearchNilai06 {
         }
 
         if (!ditemukan) {
-            System.out.println("Nilai " + key + " tidak ditemukan.");
+            System.out.println("Hasil Pencarian: Nilai " + key + " tidak ditemukan di dalam daftar data.");
         }
     }
 }
