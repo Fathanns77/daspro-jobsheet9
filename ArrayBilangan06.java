@@ -1,3 +1,4 @@
+
 /**
  * ArrayBilangan06
  */
@@ -5,10 +6,10 @@ import java.util.Arrays;
 
 public class ArrayBilangan06 {
     public static void main(String[] args) {
-        int[] bil = {5, 13, -7, 17};
+        int[] bil = { 5, 13, -7, 17 };
 
         for (int i = 0; i < bil.length; i++) {
-            System.out.println("bil[" + i + "] = " + bil[i]);
+            System.out.println("bil[" + i + "] = " + bil[i] + ", double = " + (bil[i] * 2));
         }
 
         for (int nilai : bil) {
@@ -17,5 +18,5 @@ public class ArrayBilangan06 {
 
         System.out.println(Arrays.toString(bil));
     }
-    
+
 }
